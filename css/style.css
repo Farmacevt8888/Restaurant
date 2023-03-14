@@ -54,6 +54,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
    text-decoration: none;
+   color: #fff;
 }
 a:hover {
    text-decoration: none;
@@ -76,6 +77,8 @@ h6 {
 /*--------------------*/
 
 .container {
+   position: relative;
+
    max-width: 1190px;
    margin: 0 auto;
 }
@@ -92,10 +95,10 @@ h6 {
    justify-content: space-around;
    font-family: "Open Sans";
 }
-.header__logo {
+/* .header__logo {
 }
 .nav {
-}
+} */
 
 .nav__item {
    color: #fff;
@@ -129,12 +132,10 @@ h6 {
 
    width: 15px;
    height: 15px;
-
 }
 
-
-.phone {
-}
+/* .phone {
+} */
 
 .phone__holder {
    display: flex;
@@ -142,6 +143,7 @@ h6 {
    margin-bottom: 2px;
 }
 .phone__icon {
+   margin-right: 8px;
 }
 
 .phone__number {
@@ -157,16 +159,16 @@ h6 {
    max-width: 154px;
    color: #fff;
    font-weight: 400;
+   line-height: 18px;
 }
 .btn {
- padding: 14px 18px;
+   padding: 14px 18px;
    background: #ff7400;
 
    font-family: "Open Sans";
    font-weight: 700;
    font-size: 14px;
    line-height: 19px;
-   color: #ffffff;
    text-transform: uppercase;
 
    transition: 0.5s all linear;
@@ -175,4 +177,60 @@ h6 {
 .btn:hover {
    background: #ffffff;
    color: #ff7400;
+}
+
+.header__down {
+   position: absolute;
+   top: 245px;
+   left: 47px;
+   font-family: "Tinos";
+   color: #d67e35;
+   text-align: center;
+}
+.header__down .btn{
+   padding: 14px 28px;
+}
+.header__title {
+   font-size: 50px;
+   line-height: 57px;
+}
+.header__subtitle {
+   font-size: 80px;
+   line-height: 92px;
+
+   margin-bottom: 12px;
+}
+.header__suptitle {
+   position: relative;
+
+   margin-bottom: 21px;
+
+   font-family: "Open Sans";
+   font-size: 18px;
+   line-height: 25px;
+   color: #ffffff;
+   text-transform: uppercase;
+}
+
+.header__suptitle::after {
+   content: "";
+   position: absolute;
+   height: 2px;
+   width: 61px;
+   background-color: #fff;
+   top: 11px;
+   left: 86px;
+   display: block;
+}
+
+
+.header__suptitle::before {
+   content: "";
+   position: absolute;
+   height: 2px;
+   width: 61px;
+   background-color: #fff;
+   top: 11px;
+   right: 86px;
+   display: block;
 }
