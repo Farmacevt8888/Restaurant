@@ -1,0 +1,178 @@
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,
+:active {
+   outline: none;
+}
+a:focus,
+a:active {
+   outline: none;
+}
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+input::-ms-clear {
+   display: none;
+}
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+/*--------------------*/
+
+.container {
+   max-width: 1190px;
+   margin: 0 auto;
+}
+
+.header {
+   height: 100vh;
+   background: url("../images/bg/bg.jpg") center / cover no-repeat;
+}
+
+.header__line {
+   padding-top: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   font-family: "Open Sans";
+}
+.header__logo {
+}
+.nav {
+}
+
+.nav__item {
+   color: #fff;
+   font-weight: 700;
+   font-size: 14px;
+   text-transform: uppercase;
+
+   margin-right: 25px;
+
+   transition: 0.3s all linear;
+}
+
+.nav__item:last-child {
+   margin-right: 35px;
+}
+
+.nav__item:hover {
+   color: #ff7400;
+}
+.cart {
+   position: relative;
+
+   border-right: 1px solid #fff;
+   height: 50px;
+}
+
+.cart__img {
+   position: absolute;
+   top: 18px;
+   right: 21px;
+
+   width: 15px;
+   height: 15px;
+
+}
+
+
+.phone {
+}
+
+.phone__holder {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2px;
+}
+.phone__icon {
+}
+
+.phone__number {
+   color: #fff;
+   font-weight: 700;
+}
+
+.phone__number:hover {
+   color: #ff7400;
+   transition: 0.5s all;
+}
+.phone__text {
+   max-width: 154px;
+   color: #fff;
+   font-weight: 400;
+}
+.btn {
+ padding: 14px 18px;
+   background: #ff7400;
+
+   font-family: "Open Sans";
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 19px;
+   color: #ffffff;
+   text-transform: uppercase;
+
+   transition: 0.5s all linear;
+}
+
+.btn:hover {
+   background: #ffffff;
+   color: #ff7400;
+}
