@@ -242,10 +242,9 @@ h6 {
    display: flex;
    justify-content: space-between;
 
-  margin-top: -107px;
+   margin-top: -107px;
+   margin-bottom: 150px;
 }
-
-
 
 .card {
    margin-right: 10px;
@@ -275,3 +274,42 @@ h6 {
 }
 .card__descr {
 } */
+.history__descr {
+   max-width: 444px;
+   
+   text-align: center;
+}
+.history__title {
+   margin: 16px 0px 21px;
+   font-size: 54px;
+   line-height: 62px;
+}
+.history__title span {
+   color: #d67e34;
+}
+.history__subtitle {
+   margin-bottom: 39px;
+   
+   font-size: 16px;
+   line-height: 22px;
+   color: #656363;
+}
+
+.number {
+   display: flex;
+   justify-content: space-around;
+
+   text-align: center;
+   font-family: "Open Sans";
+}
+.number__item {
+   font-size: 40px;
+   line-height: 54px;
+   color: #bc9060;
+}
+.number__item span {
+   display: block;
+   font-size: 20px;
+   line-height: 27px;
+   color: #000000;
+}
