@@ -274,9 +274,16 @@ h6 {
 }
 .card__descr {
 } */
-.history__descr {
+.history {
+   margin-bottom: 122px;
+}
+.history__holder {
+   display: flex;
+   justify-content: space-between;
+}
+.history__info {
    max-width: 444px;
-   
+   justify-content: center;
    text-align: center;
 }
 .history__title {
@@ -289,7 +296,7 @@ h6 {
 }
 .history__subtitle {
    margin-bottom: 39px;
-   
+
    font-size: 16px;
    line-height: 22px;
    color: #656363;
@@ -312,4 +319,30 @@ h6 {
    font-size: 20px;
    line-height: 27px;
    color: #000000;
+}
+
+.history__images {
+   position: relative;
+   width: 539px;
+   height: 497px;
+}
+
+.img-1 {
+   position: absolute;
+   z-index: 0;
+   top: 65px;
+   left: -13px;
+}
+.img-2 {
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   right: 93px;
+}
+
+.img-3 {
+   position: absolute;
+   z-index: -1;
+   bottom: 0;
+   right: 0px;
 }
