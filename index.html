@@ -1,148 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap&subset=cyrillic-ext"
-      rel="stylesheet" />
-   <link
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Tinos:regular,italic,700,700italic&display=swap&subset=cyrillic-ext"
-      rel="stylesheet" />
-   <link rel="stylesheet" href="css/style.css">
-   <title>Ресторан</title>
-</head>
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ресторан</title>
+  </head>
 
-<body>
-   <header class="header">
+  <body>
+    <header class="header">
       <div class="header__container container">
-         <div class="header__line">
+        <div class="header__line">
+          <div class="header__logo">
+            <img src="images/icons/logo.png" alt="logo" />
+          </div>
 
-            <div class="header__logo">
-               <img src="images/icons/logo.png" alt="logo">
+          <nav class="nav">
+            <a class="nav__item" href="#">главная</a>
+            <a class="nav__item" href="#">меню</a>
+            <a class="nav__item" href="#">о нас</a>
+            <a class="nav__item" href="#">бронь</a>
+          </nav>
+
+          <div class="cart">
+            <a href="#">
+              <img class="cart__img" src="images/icons/cart.svg" alt="cart" />
+            </a>
+          </div>
+
+          <div class="phone">
+            <div class="phone__holder">
+              <div class="phone__icon">
+                <img src="images/icons/phone.svg" alt="" />
+              </div>
+              <a class="phone__number" href="tel:+999-888-76-54"
+                >+999-888-76-54</a
+              >
             </div>
 
-            <nav class="nav">
-               <a class="nav__item" href="#">главная</a>
-               <a class="nav__item" href="#">меню</a>
-               <a class="nav__item" href="#">о нас</a>
-               <a class="nav__item" href="#">бронь</a>
-            </nav>
+            <div class="phone__text">Свяжитесь с нами для бронирования</div>
+          </div>
 
-            <div class="cart">
-               <a href="#">
-                  <img class="cart__img" src="images/icons/cart.svg" alt="cart">
-               </a>
-            </div>
-
-            <div class="phone">
-
-               <div class="phone__holder">
-                  <div class="phone__icon">
-                     <img src="images/icons/phone.svg" alt="">
-                  </div>
-                  <a class="phone__number" href="tel:+999-888-76-54">+999-888-76-54</a>
-               </div>
-
-
-               <div class="phone__text">Свяжитесь с нами для
-                  бронирования</div>
-            </div>
-
-            <button type="button" class="btn">заказ столика</button>
-         </div>
-         <div class="header__down">
-            <div class="header__title">Добро пожаловать в</div>
-            <div class="header__subtitle">Наш ресторан</div>
-            <div class="header__suptitle">ДОМ ЛУЧШЕЙ ЕДЫ</div>
-            <button type="button" class="btn">меню</button>
-         </div>
+          <button type="button" class="btn">заказ столика</button>
+        </div>
+        <div class="header__down">
+          <h2 class="header__title">Добро пожаловать в</h2>
+          <h1 class="header__subtitle">Наш ресторан</h1>
+          <h3 class="header__suptitle">ДОМ ЛУЧШЕЙ ЕДЫ</h3>
+          <button type="button" class="btn">меню</button>
+        </div>
       </div>
-   </header>
-   <div class="cards__container container">
+    </header>
+    <div class="cards__container container">
       <div class="cards">
+        <div class="card">
+          <div class="card__img">
+            <img src="images/icons/card.png" alt="card-img" />
+          </div>
+          <div class="card__title">Магическая <span>Атмосфера</span></div>
+          <div class="card__subtitle">
+            В нашем заведении царит магическая атмосфера наполненная вкусными
+            ароматами
+          </div>
+        </div>
 
-         <div class="card">
-            <div class="card__img">
-               <img src="images/icons/card.png" alt="card-img">
-            </div>
-            <div class="card__title">Магическая <span>Атмосфера</span></div>
-            <div class="card__subtitle">В нашем заведении царит магическая атмосфера наполненная вкусными ароматами
-            </div>
-         </div>
+        <div class="card">
+          <div class="card__img">
+            <img src="images/icons/card.png" alt="card-img" />
+          </div>
+          <div class="card__title">Лучшее качество <span>Еды</span></div>
+          <div class="card__subtitle">Качество нашей Еды - отменное!</div>
+        </div>
 
-         <div class="card">
-            <div class="card__img">
-               <img src="images/icons/card.png" alt="card-img">
-            </div>
-            <div class="card__title">Лучшее качество <span>Еды</span></div>
-            <div class="card__subtitle">Качество нашей
-               Еды - отменное!</div>
-         </div>
-
-         <div class="card">
-            <div class="card__img">
-               <img src="images/icons/card.png" alt="card-img">
-            </div>
-            <div class="card__title">Недорогая <span>Еда</span></div>
-            <div class="card__descr">Стоимость нашей Еды
-               зависит только от ее количества. Качество всегда на высоте!</div>
-         </div>
-
+        <div class="card">
+          <div class="card__img">
+            <img src="images/icons/card.png" alt="card-img" />
+          </div>
+          <div class="card__title">Недорогая <span>Еда</span></div>
+          <div class="card__descr">
+            Стоимость нашей Еды зависит только от ее количества. Качество всегда
+            на высоте!
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div class="history">
+    <div class="history">
       <div class="container">
-         <div class="history__holder">
-            <div class="history__info">
-               <div class="history__title">Наша <span>История</span> </div>
-               <div class="history__subtitle">Как и у любого другого самобытного места, у нас есть своя, особая история.
-                  Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана
-                  застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось
-                  навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</div>
-               <div class="history__number number">
-                  <div class="number__item">
-                     93 <span>Напитки</span>
-                  </div>
-                  <div class="number__item">
-                     206 <span>Еда</span>
-                  </div>
-                  <div class="number__item">
-                     71
-                     <span>Закуски</span>
-                  </div>
-               </div>
+        <div class="history__holder">
+          <div class="history__info">
+            <div class="history__title title">Наша <span>История</span></div>
+            <div class="history__subtitle">
+              Как и у любого другого самобытного места, у нас есть своя, особая
+              история. Идея ресторана пришла основателям неожиданно. Во время
+              прогулки по лесу создатель нашего ресторана застрял в сотнях
+              километров от ближайшего населенного пункта. Вдали от цивилизации
+              и связи им пришлось навремя обустровать себе нехитрый быт,
+              добывать и готовить себе еду.
             </div>
-
-            <div class="history__images">
-               <img class="img-1" src="images/history/history_1.png" alt="history images">
-               <img class="img-2" src="images/history/history_2.png" alt="history images">
-               <img class="img-3" src="images/history/history_3.png" alt="history images">
+            <div class="history__number number">
+              <div class="number__item">93 <span>Напитки</span></div>
+              <div class="number__item">206 <span>Еда</span></div>
+              <div class="number__item">
+                71
+                <span>Закуски</span>
+              </div>
             </div>
-         </div>
+          </div>
 
+          <div class="history__images">
+            <img
+              class="img-1"
+              src="images/history/history_1.png"
+              alt="history images"
+            />
+            <img
+              class="img-2"
+              src="images/history/history_2.png"
+              alt="history images"
+            />
+            <img
+              class="img-3"
+              src="images/history/history_3.png"
+              alt="history images"
+            />
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div class="reservation">
+    <div class="reservation">
       <div class="reservation__container container">
+        <div class="reservation__title">
+          <div class="reservation__suptitle">
+            Отпразднуйте в одном из самых лучших ресторанов.
+          </div>
+          <div class="reservation__subtitle">
+            Только в этом месяце бизнес-ланч от 250 ₽
+          </div>
+        </div>
 
-         <div class="reservation__title">
-         <div class="reservation__suptitle">Отпразднуйте в одном из
-            самых лучших ресторанов.</div>
-         <div class="reservation__subtitle">Только в этом месяце бизнес-ланч от 250 ₽</div>
+        <div class="reservation__btn">
+          <button class="btn">заказ столика</button>
+        </div>
       </div>
-
-      <div class="reservation__btn ">
-         <button class="btn">заказ столика</button>
+    </div>
+    <div class="dishes">
+      <div class="dishes__container container">
+         <div class="dishes__title title">Наши <span>Блюда</span></div>
+         
+         <div class="burgers">
+            <div class="burgers__image">
+               <img src="images/img/pizza.png" alt="pizza" class="pizza">
+            </div>
+            <div class="burgers__items">
+               <div class="burgers__item">
+                  <img src="images/img/hamburger.png" alt="hamburger" class="burger">
+                  <div class="burgers__item-text">Гамбургер мини ----------------------------- 220 ₽  </div>
+               </div>
+               <div class="burgers__item">
+                  <img src="images/img/hamburger.png" alt="hamburger" class="burger">
+                  <div class="burgers__item-text">Гамбургер мини ----------------------------- 220 ₽  </div>
+               </div>
+               <div class="burgers__item">
+                  <img src="images/img/hamburger.png" alt="hamburger" class="burger">
+                  <div class="burgers__item-text">Гамбургер мини ----------------------------- 220 ₽  </div>
+               </div>
+               
+            </div>
+            
+            
+         </div>
       </div>
       
-      </div>
-      
-   </div>
-</body>
-
+    </div>
+  </body>
 </html>
