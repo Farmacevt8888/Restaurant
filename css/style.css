@@ -86,8 +86,15 @@ h6 {
 }
 
 .header {
-   min-height: 800px;
-   background: url("../images/bg/bg.jpg") center / cover no-repeat;
+   min-height: 100vh;
+   background: url("../images/bg/bg.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 
 .header__container {
@@ -189,7 +196,7 @@ h6 {
 
 .header__down {
    position: absolute;
-   top: 245px;
+   top: 322px;
    left: 47px;
    color: #d67e35;
    text-align: center;
