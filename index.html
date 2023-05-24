@@ -12,7 +12,13 @@
       href="https://fonts.googleapis.com/css?family=Tinos:regular,italic,700,700italic&display=swap&subset=cyrillic-ext"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css?family=Cookie:regular" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie:regular"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css" />
     <title>Ресторан</title>
   </head>
@@ -41,11 +47,9 @@
           <div class="phone">
             <div class="phone__holder">
               <div class="phone__icon">
-                <img src="images/icons/phone.svg" alt="" />
+                <img src="images/icons/phone.svg" alt="phone"/>
               </div>
-              <a class="phone__number" href="tel:+999-888-76-54"
-                >+999-888-76-54</a
-              >
+              <a class="phone__number" href="tel:+999-888-76-54">+999-888-76-54</a>
             </div>
 
             <div class="phone__text">Свяжитесь с нами для бронирования</div>
@@ -56,11 +60,16 @@
         <div class="header__down">
           <h2 class="header__title">Добро пожаловать в</h2>
           <h1 class="header__subtitle">Наш ресторан</h1>
-          <h3 class="header__suptitle">ДОМ ЛУЧШЕЙ ЕДЫ</h3>
+          <div class="header__suptitle">
+            <h3 class="header__suptitle-text">ДОМ ЛУЧШЕЙ ЕДЫ</h3>
+          </div>
+          
+          
           <button type="button" class="btn">меню</button>
         </div>
       </div>
     </header>
+
     <div class="cards__container container">
       <div class="cards">
         <div class="card">
@@ -95,7 +104,7 @@
       </div>
     </div>
 
-    <div class="history">
+    <section class="history">
       <div class="container">
         <div class="history__holder">
           <div class="history__info">
@@ -137,16 +146,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="reservation">
+    <section class="reservation">
       <div class="reservation__container container">
         <div class="reservation__title">
           <div class="reservation__suptitle">
             Отпразднуйте в одном из самых лучших ресторанов.
           </div>
           <div class="reservation__subtitle">
-            Только в этом месяце бизнес-ланч от 250 ₽
+            Только в этом месяце бизнес-ланч от 250 грн
           </div>
         </div>
 
@@ -154,10 +163,11 @@
           <button class="btn">заказ столика</button>
         </div>
       </div>
-    </div>
-    <div class="dishes">
+    </section>
+
+    <section class="dishes">
       <div class="dishes__container container">
-        <div class="dishes__title title">Наши <span>Блюда</span></div>
+        <div class="title">Наши <span>Блюда</span></div>
 
         <div class="burgers">
           <div class="burgers__image">
@@ -171,7 +181,7 @@
                 class="burger"
               />
               <div class="burgers__item-text">
-                Гамбургер мини ----------------------------- 220 ₽
+                Гамбургер мини ------------------------- 220 грн
               </div>
             </div>
             <div class="burgers__item">
@@ -181,7 +191,7 @@
                 class="burger"
               />
               <div class="burgers__item-text">
-                Гамбургер мини ----------------------------- 220 ₽
+                Гамбургер мини ------------------------- 220 грн
               </div>
             </div>
             <div class="burgers__item">
@@ -191,51 +201,85 @@
                 class="burger"
               />
               <div class="burgers__item-text">
-                Гамбургер мини ----------------------------- 220 ₽
+                Гамбургер мини ------------------------- 220 грн
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="menu">
+    <section class="menu">
       <div class="container menu__container">
         <div class="menu__title">Наше меню</div>
         <div class="menu__items">
-
           <div class="menu__item">
             <div class="menu__image">
               <img src="images/img/burger.png" alt="burger" class="menu__img" />
-              <div class="menu__image-circle">420</div>
+              <div class="menu__image-circle">150</div>
             </div>
             <div class="menu__text">Гамбургер макси</div>
-            <div class="menu__subtext">Максимально толстый <br> слой мяса</div>
+            <div class="menu__subtext">
+              Максимально толстый <br />
+              слой мяса
+            </div>
             <button class="menu__button btn">ЗАКАЗАТЬ</button>
           </div>
           <div class="menu__item">
             <div class="menu__image">
               <img src="images/img/burger.png" alt="burger" class="menu__img" />
-              <div class="menu__image-circle">420</div>
+              <div class="menu__image-circle">120</div>
             </div>
             <div class="menu__text">Гамбургер макси</div>
-            <div class="menu__subtext">Максимально толстый <br> слой мяса</div>
+            <div class="menu__subtext">
+              Максимально толстый <br />
+              слой мяса
+            </div>
             <button class="menu__button btn">ЗАКАЗАТЬ</button>
           </div>
           <div class="menu__item">
             <div class="menu__image">
               <img src="images/img/burger.png" alt="burger" class="menu__img" />
-              <div class="menu__image-circle">420</div>
+              <div class="menu__image-circle">200</div>
             </div>
             <div class="menu__text">Гамбургер макси</div>
-            <div class="menu__subtext">Максимально толстый <br> слой мяса</div>
+            <div class="menu__subtext">
+              Максимально толстый <br />
+              слой мяса
+            </div>
             <button class="menu__button btn">ЗАКАЗАТЬ</button>
           </div>
-
         </div>
       </div>
-    </div>
+    </section>
 
-   
+    <section class="coments">
+      <div class="container">
+        <div class="coment">
+          <div class="coment__text">
+            Я надолго запомню мой День рождения, проведённый в этом ресторане!
+            Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде
+            фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и
+            родственникам также за рубежом, путешествующих в Киев!!!
+          </div>
+          <div class="coment__image">
+            <img src="/images/coments/face1.png" alt="photo" />
+          </div>
+          <div class="coment__type">Посетитель</div>
+          <div class="coment__name">Николай</div>
+        </div>
+      </div>
+      <div class="dotteds">
+        <div class="dotted active"></div>
+        <div class="dotted"></div>
+        <div class="dotted"></div>
+      </div>
+    </section>
+
+    <section class="galery">
+      <div class="container">
+        <div class="title">Галерея <span>Блюд</span></div>
+      </div>
+    </section>
   </body>
 </html>
